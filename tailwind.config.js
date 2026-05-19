@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"], // Indique à Tailwind de scanner ton fichier HTML
+  content: ["./public/**/*.html"], // On cible le HTML dans le dossier public
   theme: {
     extend: {
       fontFamily: {
