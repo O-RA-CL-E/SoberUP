@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoberUp - Pitch Deck</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Urbanist:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              heading: ["Urbanist", "sans-serif"],
+            },
+            colors: {
+              brand: {
+                dark: "#0a0a0c",
+                gray: "#141418",
+                cyan: "#00f2ff",
+                lime: "#b1ff00",
+                text: "#a1a1aa",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #0a0a0c;
+        color: white;
+      }
+      .glass-panel {
+        background: rgba(20, 20, 24, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+    </style>
+  </head>
+  <body class="antialiased selection:bg-brand-cyan selection:text-black">
+    <nav
+      class="fixed w-full z-50 glass-panel py-4 px-8 flex justify-between items-center"
+    >
+      <div class="text-2xl font-heading font-black tracking-wider">
+        SOBER<span class="text-brand-cyan">UP</span>
+      </div>
+      <div
+        class="hidden md:flex space-x-6 text-xs uppercase tracking-widest font-semibold text-brand-text"
+      >
+        <a href="#crisis" class="hover:text-white transition">Crisis</a>
+        <a href="#solution" class="hover:text-white transition">Solution</a>
+        <a href="#tech" class="hover:text-white transition">Tech</a>
+        <a href="#business" class="hover:text-white transition">Business</a>
+        <a href="#market" class="hover:text-white transition">Market</a>
+        <a href="#advantage" class="hover:text-white transition">Advantage</a>
+        <a href="#roadmap" class="hover:text-white transition">Roadmap</a>
+      </div>
+    </nav>
+
+    <section
+      class="min-h-screen flex flex-col items-center justify-center pt-20 relative text-center"
+    >
+      <h1
+        class="text-7xl md:text-9xl font-heading font-black mb-4 tracking-tighter"
+      >
+        SOBER<span class="text-brand-cyan">UP</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-brand-text mb-16">
+        The Future of Responsible Drinking & Road Safety
+      </p>
+
+      <div class="mt-12">
+        <h2
+          class="text-4xl md:text-6xl font-heading font-bold uppercase tracking-widest"
+        >
+          The Crisis & The Vision
+        </h2>
+        <div class="w-24 h-1 bg-brand-lime mx-auto mt-8"></div>
+      </div>
+    </section>
+
+    <section id="crisis" class="py-24 border-t border-white/5 bg-brand-gray/30">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2
+          class="text-4xl font-heading font-bold text-brand-cyan mb-12 uppercase tracking-wide"
+        >
+          The Safety Crisis
+        </h2>
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <p class="text-2xl font-bold mb-6 text-white">
+              Uncertainty leads to fatal decisions.
+            </p>
+            <p class="text-brand-text text-lg leading-relaxed">
+              Currently, there is no efficient solution for real-time metabolic
+              tracking. This issue affects over
+              <strong>1.2 million drivers</strong> annually in Europe alone,
+              creating a persistent risk on our roads.
+            </p>
+          </div>
+          <div
+            class="h-[400px] bg-brand-gray border border-white/10 rounded-2xl flex items-center justify-center text-brand-text"
+          >
+            <img
+              src="assets/img/night_crisis.png"
+              alt="Night Crisis"
+              class="object-cover rounded-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution" class="py-24 border-t border-white/5">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2
+          class="text-4xl font-heading font-bold text-brand-cyan mb-12 uppercase tracking-wide"
+        >
+          Our Intelligent Solution
+        </h2>
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div
+            class="h-[400px] w-[400px] mx-auto bg-brand-gray border-4 border-brand-cyan/20 rounded-full flex items-center justify-center text-brand-text"
+          >
+            <img
+              src="assets/img/ui_mockup.png"
+              alt="App Interface"
+              class="object-cover rounded-full"
+            />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-4 text-white">
+              Medical-Grade Precision
+            </h3>
+            <p class="text-brand-text text-lg leading-relaxed">
+              An intelligent assistant that predicts sobriety using biometric
+              data. Users monitor their BAC (Blood Alcohol Content) via a
+              seamless, intuitive UI designed for real-time tracking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech" class="py-24 border-t border-white/5 bg-brand-gray/30">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2
+          class="text-4xl font-heading font-bold text-brand-cyan mb-12 uppercase tracking-wide"
+        >
+          Core Technology
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="glass-panel p-8 rounded-2xl border-t-2 border-t-brand-cyan"
+          >
+            <i class="fa-solid fa-code text-4xl text-brand-cyan mb-6"></i>
+            <h3 class="text-xl font-bold text-white mb-4">React Native</h3>
+            <p class="text-brand-text">
+              Cross-platform performance with a native look and feel for both
+              iOS and Android users.
+            </p>
+          </div>
+          <div
+            class="glass-panel p-8 rounded-2xl border-t-2 border-t-brand-lime"
+          >
+            <i class="fa-solid fa-microchip text-4xl text-brand-lime mb-6"></i>
+            <h3 class="text-xl font-bold text-white mb-4">Widmark 2.0</h3>
+            <p class="text-brand-text">
+              Proprietary algorithm accounting for BMI, food intake, and
+              hydration for ±0.01% accuracy.
+            </p>
+          </div>
+          <div class="glass-panel p-8 rounded-2xl border-t-2 border-t-white">
+            <i class="fa-solid fa-brain text-4xl text-white mb-6"></i>
+            <h3 class="text-xl font-bold text-white mb-4">Machine Learning</h3>
+            <p class="text-brand-text">
+              Model trained on 10,000+ metabolic profiles to deliver
+              hyper-personalized results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 border-t border-white/5">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2
+          class="text-4xl font-heading font-bold text-brand-cyan mb-12 uppercase tracking-wide"
+        >
+          System Architecture
+        </h2>
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <p class="text-2xl font-bold mb-6 text-white">Scalable & Secure.</p>
+            <p class="text-brand-text text-lg leading-relaxed mb-4">
+              Dockerized microservices hosted on AWS Cloud to handle peak
+              weekend traffic globally.
+            </p>
+            <p class="text-brand-text text-lg leading-relaxed">
+              End-to-end encryption ensures all sensitive health and consumption
+              data remains private.
+            </p>
+          </div>
+          <div
+            class="h-[300px] bg-brand-gray border border-white/10 rounded-2xl flex items-center justify-center text-brand-text"
+          >
+            <img
+              src="assets/img/system_architecture.png"
+              alt="System Architecture"
+              class="object-cover rounded-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="business"
+      class="py-24 border-t border-white/5 bg-brand-gray/30"
+    >
+      <div class="max-w-6xl mx-auto px-6">
+        <h2
+          class="text-4xl font-heading font-bold text-brand-cyan mb-12 uppercase tracking-wide"
+        >
+          Business Model
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="glass-panel p-10 rounded-3xl">
+            <i
+              class="fa-solid fa-layer-group text-3xl text-brand-cyan mb-6"
+            ></i>
+            <h3 class="text-2xl font-bold text-white mb-4">Freemium & B2B</h3>
+            <p class="text-brand-text text-lg">
+              Ad-supported free tier with premium health insights. Partnerships
+              with car insurance and driving schools.
+            </p>
+          </div>
+          <div class="glass-panel p-10 rounded-3xl">
+            <i
+              class="fa-solid fa-calendar-check text-3xl text-brand-lime mb-6"
+            ></i>
+            <h3 class="text-2xl font-bold text-white mb-4">
+              Events & Hardware
+            </h3>
+            <p class="text-brand-text text-lg">
+              Licensing for music festivals and event organizers. Hardware
+              upsell for Bluetooth breathalyzer integration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="market" class="py-24 border-t border-white/5">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2
+          class="text-4xl font-heading font-bold text-brand-cyan mb-12 uppercase tracking-wide"
+        >
+          Market Proportions
+        </h2>
+        <div
+          class="flex flex-col md:flex-row gap-16 items-center justify-center"
+        >
+          <div
+            class="w-64 h-64 rounded-full border-[16px] border-brand-gray relative"
+            style="
+              border-top-color: #00f2ff;
+              border-right-color: #00f2ff;
+              border-bottom-color: #b1ff00;
+              border-left-color: #444;
+            "
+          >
+            <div
+              class="absolute inset-0 flex items-center justify-center text-center"
+            >
+              <span class="text-sm text-brand-text uppercase"
+                >Target:<br /><strong class="text-white text-lg"
+                  >18-35</strong
+                ></span
+              >
+            </div>
+          </div>
+          <div class="space-y-6 w-full max-w-md">
+            <div class="flex items-center gap-4">
+              <div class="w-6 h-6 rounded bg-brand-cyan"></div>
+              <div class="text-xl text-white">
+                Students <strong class="ml-auto">(60%)</strong>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-6 h-6 rounded bg-brand-lime"></div>
+              <div class="text-xl text-white">
+                Social Adults <strong class="ml-auto">(25%)</strong>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-6 h-6 rounded bg-gray-600"></div>
+              <div class="text-xl text-white">
+                Event Org <strong class="ml-auto">(15%)</strong>
+              </div>
+            </div>
+            <p class="text-brand-text mt-6">
+              Targeting <strong>Digital Natives</strong> who value safety and
+              tech-integration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="advantage"
+      class="py-24 border-t border-white/5 bg-brand-gray/30"
+    >
+      <div class="max-w-6xl mx-auto px-6">
+        <h2
+          class="text-4xl font-heading font-bold text-brand-cyan mb-12 uppercase tracking-wide"
+        >
+          The SoberUp Advantage
+        </h2>
+        <div class="space-y-8 max-w-4xl mx-auto">
+          <div class="flex gap-6 items-start">
+            <i
+              class="fa-solid fa-shield-halved text-3xl text-brand-cyan mt-1"
+            ></i>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Beyond Data:</h3>
+              <p class="text-brand-text text-lg">
+                We don't just track; we provide actionable safety solutions in
+                real-time.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start">
+            <i class="fa-solid fa-car text-3xl text-brand-cyan mt-1"></i>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Seamless Integration:
+              </h3>
+              <p class="text-brand-text text-lg">
+                Direct ride-hailing APIs (Uber, Bolt) integrated for one-click
+                safety.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start">
+            <i
+              class="fa-solid fa-hand-holding-heart text-3xl text-brand-cyan mt-1"
+            ></i>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">
+                Proactive Prevention:
+              </h3>
+              <p class="text-brand-text text-lg">
+                Real-time accident avoidance by predicting impairment before it
+                happens.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="py-24 border-t border-white/5">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2
+          class="text-4xl font-heading font-bold text-brand-cyan mb-12 uppercase tracking-wide"
+        >
+          Strategic Roadmap
+        </h2>
+        <div class="grid md:grid-cols-4 gap-6 text-center">
+          <div class="glass-panel p-6 rounded-2xl relative">
+            <div class="w-4 h-4 bg-brand-cyan rounded-full mx-auto mb-4"></div>
+            <h3 class="text-2xl font-bold text-white mb-1">2026</h3>
+            <h4 class="text-brand-cyan mb-4">Beta Launch</h4>
+            <p class="text-sm text-brand-text">
+              Initial system testing and accuracy calibration.
+            </p>
+          </div>
+          <div class="glass-panel p-6 rounded-2xl relative">
+            <div class="w-4 h-4 bg-brand-cyan rounded-full mx-auto mb-4"></div>
+            <h3 class="text-2xl font-bold text-white mb-1">2026</h3>
+            <h4 class="text-brand-cyan mb-4">Alliances</h4>
+            <p class="text-sm text-brand-text">
+              Ride-sharing API deep partnerships for user safety.
+            </p>
+          </div>
+          <div class="glass-panel p-6 rounded-2xl relative">
+            <div class="w-4 h-4 bg-brand-cyan rounded-full mx-auto mb-4"></div>
+            <h3 class="text-2xl font-bold text-white mb-1">2027</h3>
+            <h4 class="text-brand-cyan mb-4">Global</h4>
+            <p class="text-sm text-brand-text">
+              Expansion into EU and US markets with localization.
+            </p>
+          </div>
+          <div
+            class="glass-panel p-6 rounded-2xl relative border-b-4 border-b-brand-lime"
+          >
+            <div class="w-4 h-4 bg-brand-lime rounded-full mx-auto mb-4"></div>
+            <h3 class="text-2xl font-bold text-white mb-1">Beyond</h3>
+            <h4 class="text-brand-lime mb-4">Ecosystem</h4>
+            <p class="text-sm text-brand-text">
+              Apple Watch and Garmin device integration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 border-t border-white/5 bg-brand-gray/30">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2
+          class="text-4xl font-heading font-bold text-brand-cyan mb-12 uppercase tracking-wide"
+        >
+          The Leadership Team
+        </h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <div
+              class="glass-panel p-8 rounded-2xl border-l-4 border-l-brand-cyan"
+            >
+              <h3 class="text-xl font-bold text-white mb-1">
+                Strategic Visionary
+              </h3>
+              <p class="text-brand-cyan font-bold mb-3">CEO</p>
+              <p class="text-brand-text">
+                Focuses on business growth, insurance partnerships, and market
+                strategy.
+              </p>
+            </div>
+            <div
+              class="glass-panel p-8 rounded-2xl border-l-4 border-l-brand-lime"
+            >
+              <h3 class="text-xl font-bold text-white mb-1">Tech Lead</h3>
+              <p class="text-brand-lime font-bold mb-3">CTO</p>
+              <p class="text-brand-text">
+                Specialist in Machine Learning and Cloud architecture. Expert in
+                Widmark 2.0.
+              </p>
+            </div>
+          </div>
+          <div
+            class="h-[400px] bg-brand-gray border border-white/10 rounded-2xl flex items-center justify-center text-brand-text"
+          >
+            [Image: Team Collaboration]
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32 border-t border-white/5 text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2
+          class="text-6xl md:text-8xl font-heading font-black text-brand-cyan mb-8"
+        >
+          Questions?
+        </h2>
+        <p class="text-2xl text-white mb-12">
+          Investing in Safety & Movement towards Zero Road Fatalities.
+        </p>
+        <div class="font-mono text-brand-lime text-xl space-y-2">
+          <p>www.soberup.tech</p>
+          <p>contact@soberup-app.com</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
