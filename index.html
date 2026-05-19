@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SoberUp - Pitch Deck</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Urbanist:wght@700;900&display=swap"
       rel="stylesheet"
@@ -14,38 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-              heading: ["Urbanist", "sans-serif"],
-            },
-            colors: {
-              brand: {
-                dark: "#0a0a0c",
-                gray: "#141418",
-                cyan: "#00f2ff",
-                lime: "#b1ff00",
-                text: "#a1a1aa",
-              },
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      body {
-        background-color: #0a0a0c;
-        color: white;
-      }
-      .glass-panel {
-        background: rgba(20, 20, 24, 0.7);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-      }
-    </style>
+    <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body class="antialiased selection:bg-brand-cyan selection:text-black">
     <nav
@@ -469,8 +438,14 @@
           Investing in Safety & Movement towards Zero Road Fatalities.
         </p>
         <div class="font-mono text-brand-lime text-xl space-y-2">
-          <p>www.soberup.tech</p>
-          <p>contact@soberup-app.com</p>
+          <p>
+            <a href="https://sober-up-two.vercel.app/" target="_blank"
+              >www.soberup.tech</a
+            >
+          </p>
+          <p>
+            <a href="mailto:contact@soberup-app.com">contact@soberup-app.com</a>
+          </p>
         </div>
       </div>
     </section>

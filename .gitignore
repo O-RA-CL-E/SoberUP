@@ -1,0 +1,13 @@
+# Dépendances NPM
+node_modules/
+npm-debug.log*
+
+# Dossier de build (Vercel le générera tout seul)
+dist/
+
+# Fichiers de configuration Vercel (si générés localement)
+.vercel/
+
+# Fichiers système (macOS/Windows)
+.DS_Store
+Thumbs.db
